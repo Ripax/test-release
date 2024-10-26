@@ -1,0 +1,31 @@
+# This is basic workflows to help you to get started with action.
+
+name: test-release
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Manual trigger
+workflow_dispatch:
+
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a onle line script.
+        run : |
+          echo Namaste world !
+          sleep 15
+          echo date
+          echo goodby !
+      - name: Run a multi-line script
+        run: |
+          echo "${{ github.workspace }}"
+        
+
