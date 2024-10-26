@@ -4,7 +4,7 @@ changelog:
       labels:
         - Semver-Major
         - breaking-change
-    - title: Exciting new features :tada:
+    - title: Exciting new features ;tada:
       labels:
         - Semver-Minor
         - enhancement
