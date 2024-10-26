@@ -1,0 +1,19 @@
+name: Release note auto update 
+on:
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+changelog:
+  catagories:
+    - title: Breaking Changes
+      labels:
+        - Semver-Major
+        - breaking-change
+    - title: Exciting new features
+      labels:
+        - Semver-Minor
+        - enhancement
+    - title: Other Changes
+      labels:
+        - "*"
