@@ -8,7 +8,7 @@ name: Create Release
 jobs:
   publish-to-npm:
     name: Publish to npm
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       id-token: write
     steps:
