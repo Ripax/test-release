@@ -1,3 +1,9 @@
+name: Test-Release 2024
+on:
+jobs:
+  build:
+    runs-on:
+      - self-hosted
 changelog:
   catagories:
     - title: Breaking Changes
